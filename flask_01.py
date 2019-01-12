@@ -12,7 +12,7 @@ app_lala = Flask(__name__)
 
 @app_lala.route('/hello_page_lala')
 def hello_page_lulu():
-    return('Hello World!')
+    return('Hello Worldz!')
 
 if __name__=="__main__":
     app_lala.run(debug=True)
