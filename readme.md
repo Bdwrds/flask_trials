@@ -1,6 +1,6 @@
 # Exploring options with flask apps and keras models.
 
-## model_training.py
+## training_model.py
 Using keras to train a bidirectional LSTM on the IMDB sentiment classifciation task.
 Source: https://raw.githubusercontent.com/keras-team/keras/master/examples/imdb_bidirectional_lstm.py
 Save the model.
