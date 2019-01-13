@@ -16,7 +16,7 @@ Return negative sentiment score.
 
 ### Example
 visit - http://127.0.0.1:5000/sentiment
-enter:"The film was terrible. Nicholas Cage was brilliant ofcourse, but the everything else was awful."
+enter:"The film was terrible. Nicholas Cage was brilliant of course, but the everything else was awful."
 
 results: 
 {
