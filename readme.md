@@ -18,9 +18,7 @@ Return negative sentiment score.
 visit - http://127.0.0.1:5000/sentiment
 enter:"The film was terrible. Nicholas Cage was brilliant of course, but the everything else was awful."
 
-results: 
-{
-  "prediction": "0.8359641", 
-  "success": true
-}
+### Next Steps
+Testing and account of more input scenarios. 
+Improve/change model as output is poor.
 

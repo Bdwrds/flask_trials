@@ -20,9 +20,9 @@ def load_model():
     global graph
     graph = tf.get_default_graph()
     global model
-    model = keras.models.load_model('text_sentiment.h5')
+    model = keras.models.load_model('data/text_sentiment.h5')
     
-    pkl_file = open('word_index.pkl', 'rb')
+    pkl_file = open('data/word_index.pkl', 'rb')
     global word_index
     word_index = pickle.load(pkl_file)
     pkl_file.close()    
@@ -39,7 +39,7 @@ def prep_data(new_text):
 
 @app.route('/sentiment')
 def my_form():
-    return render_template('my-form.html')
+    return render_template('home.html')
 
 
 @app.route('/sentiment', methods=["GET","POST"])
@@ -49,11 +49,11 @@ def my_form_get():
     x_pred = prep_data(new_text)
     
     with graph.as_default():
-            data["prediction"] = str(model.predict(x_pred)[0][0])
+            data["prediction"] = model.predict(x_pred)[0][0]
             data["success"] = True
 
     # return a response in json format 
-    return flask.jsonify(data) 
+    return render_template('result.html',prediction = data["prediction"] )#return flask.jsonify(data) 
     
 
 if __name__ == "__main__":
