@@ -11,7 +11,7 @@ This was entirely an exploratory piece to familiarise myself with a deployment p
 Install everything within the requirements.txt
 
 ```
-pip intall -r ./requirements.txt
+pip install -r ./requirements.txt
 ```
 
 
@@ -41,7 +41,7 @@ python deploy_model.py
 Change to the app folder.
 Run deploy_model.py and wait for the flask api to be ready.
 
-visit - http://127.0.0.1:5000/app
+Visit - http://127.0.0.1:5000/app
 
 Enter something like:"The film was incredible! Nicholas Cage was brilliant. Its a shame Keira Knightley made an appearance.. but Cage saved the day! Loved it. Must see. Five Stars."
 
